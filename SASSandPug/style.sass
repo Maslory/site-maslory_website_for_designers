@@ -1,0 +1,506 @@
+$mainColor: rgba(61, 60, 59, 0.98)
+$backColor: #f3f3f3fa
+$height: 55px
+$hoverColor: #9b9998fa
+$Color_for_div: #58575711
+    
+    
+
+
+body
+    background: $Color_for_div
+    margin: 0
+    padding: 0
+
+    #BossKING
+        width: 100%
+        position: fixed
+        z-index: 1
+        height: 1000px
+        background: #000000b2
+        display: none
+
+
+    header
+        font-family: DejaVu Sans Mono, monospace
+        width: 100%
+        height: $height
+        background: $mainColor
+
+        #MainColumn
+            background: white
+            height: 100% + 10%
+            margin-left: 15%
+            margin-right: 15%
+
+        a
+            margin-left: 20px
+            text-decoration: none
+            color: $backColor
+            font-size: 15px
+
+        a:hover
+            color: $hoverColor
+            
+
+        #leftHead
+            margin-top: 8px
+            font-size: 25px
+            color: $backColor
+            float: left 
+            width: 70%
+
+            
+            #logo img
+                width: 35px
+                height: 35px
+                vertical-align: middle
+                
+                border-radius: 7px
+                
+            form
+                
+                display: inline
+                vertical-align: -5%
+                margin-left: 15px
+                
+
+            input
+                width: 300px
+                transition: all 0.7s
+                outline: 0
+                outline-offset: 0
+                border-radius: 3px
+                font-size: 14px
+                padding: 7px 7px 7px 37px
+                -moz-box-sizing: border-box
+	                box-sizing: border-box
+                border: none
+               
+                // outline: none
+                font: 14px Tahoma, Arial, sans-serif
+                
+
+
+            // input:focus
+            //     box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4)
+            //     background: #E8E8E8
+            //     color: #333
+                
+            #submit
+                background-size: cover
+                position: absolute
+                top: 1.2%
+                left: 22.8%
+                // outline: none
+                // border: none
+                // top: 0
+                // right: 0
+                width: 10px
+                height: 30px
+                /* растягиваем кнопку на всю высоту формы */
+                cursor: pointer
+                background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat
+                /* добавляем прозрачность кнопке отправки */
+                opacity: 0.5
+                cursor: default
+
+            // #submit:hover
+            //     opacity: 0.8
+
+            // input:hover
+            //     text-decoration: none
+            //     outline: 0
+            //     outline-offset: 0
+            //     font-size: 20px
+            //     width: 350px
+                
+                
+                
+
+            // input:focus
+            //     width: 350px
+            //     font-size: 20px
+            
+
+            
+        #rightHead
+            margin-top: 8px
+            position: relative
+            font-size: 25px
+            // position: relative
+            color: $backColor
+            float: right
+            width: 30%
+            
+            #SignUp
+                
+                // font-family: 'Nobile', Helvetica, Arial, sans-serif
+                border: solid 1px $hoverColor
+                border-radius: 7px
+                padding: 6px 9px 6px 9px
+                margin-left: 15px
+
+            #SigIn
+                // font-family: 'Corben', Georgia, Times, serif
+                margin-top: 8px
+                
+
+            #Upload
+                border: solid 3px $hoverColor
+                border-radius: 7px
+                background: rgba(158, 158, 158, 0.98)
+                padding: 6px 9px 6px 9px
+                margin-left: 150px
+                margin-right: 0px
+
+            #Upload:hover
+                background: $backColor
+                border-color: $backColor
+            
+
+            #Imgload
+                width: 20px
+                height: 20px
+                margin-right: 40px
+                
+                
+            #span1
+                // position: absolute
+                vertical-align: middle
+
+    #window_search_results
+
+        #result_box               //max line divs = 1770px, max heigth divs = 600px
+            
+            // display: table
+            // display: flex
+            // flex-wrap: wrap
+            // flex-direction: column
+            background: #58575711
+            // height: 800px
+            // line-height: 0px
+            margin-top: 30px
+            
+            // padding: 0px
+            // align-content: 0px
+            // position: absolute
+            // margin: auto
+            min-height: 827px
+            
+
+            li
+                margin: 0 5px
+                background-color: white
+                width: 270 * 1.3 + px
+                height: 205 * 1.3 + px
+                float: left
+                margin-left: 10px
+                margin-bottom: 30px
+                border-radius: 2px
+                text-align: center
+                font-size: 25px
+                padding-top: 4px
+                // padding-left: 2px
+                // -moz-transition: opacity 3s, max-height 3s
+                // -ms-transition: opacity 3s, max-height 3s
+                // transition: opacity 3s, max-height 3s
+                // padding-right: 2px
+                list-style-type: none
+
+                img
+                    // margin-left: 35px
+                    margin-top: 6.5px
+                    height: 192 * 1.3 + px
+                    width: 250 * 1.3 + px
+                
+                #show_bar
+                    width: 351px
+                    height: 60px
+                    background: white
+                    position: absolute
+                    margin-top: 206px
+                    opacity: 0
+                    display: flex
+                    flex-wrap: wrap
+                    align-content: space-between
+                    // overflow: hidden
+                    // -moz-transition: opacity 3s, max-height 3s
+                    // -ms-transition: opacity 3s, max-height 3s
+                    // transition: opacity 3s, max-height 3s
+                    font-family: DejaVu Sans Mono, monospace
+                    // font-weight: 1200px
+                    
+                    font-family: 'Corben', Georgia, Times, serif
+                    color: black
+                   
+
+
+                    #Left_Side
+                        font-family: 'Corben', Georgia, Times, serif
+                        font-family: DejaVu Sans Mono, monospace
+                        text-align: left
+                        width: 187px
+                        float: left
+                        height: 60px
+                        margin-left: 13px
+                        font-size: 12px
+
+                        #Right_Side
+                            margin-top: 7px
+                            margin-bottom: 4px
+                            font-family: 'Corben', Georgia, Times, serif
+                            height: 20px
+                            color: black
+                            font-weight: bold
+
+                        #Right_Side1
+                            color: $hoverColor
+                            font-size: 10px
+                    
+                  
+
+                    #Middle_Side
+                        display: flex
+                        float: left
+                        height: 60px
+                        width: 151px
+
+                        
+                        
+                        
+
+                        #button_like_content
+                            font-size: 11px
+                            padding-top: 10px
+                            height: 25px
+                            width: 70px
+                            font-family: DejaVu Sans Mono, monospace
+                            // padding-left: 5px
+                            // padding-right: 5px
+                            border: solid 1px #d1cdcb93
+                            border-radius: 5px
+                            color: $hoverColor
+                            margin-top: 10px
+                            font-weight: bold
+                            cursor: pointer
+
+                        #button_like_content:hover
+                            color: #4b4a4afa
+                            border-color: #727272d7
+
+                        #button_like_content:active
+                                
+                            
+
+                        #button_save_content
+                            font-weight: bold
+                            font-size: 11px
+                            color: $hoverColor
+                            padding-top: 10px
+                            height: 25px
+                            width: 70px
+                            font-family: DejaVu Sans Mono, monospace
+                            // padding-left: 5px
+                            // padding-right: 5px
+                            border: solid 1px #d1cdcb93
+                            border-radius: 5px
+                            margin-left: 5px
+                            margin-top: 10px
+                            margin-right: 10px
+                            cursor: pointer
+                    
+                        #button_save_content:hover
+                            color: #4b4a4afa
+                            border-color: #727272d7
+                    // float: left
+                
+            
+
+
+
+    
+    
+    // #foot
+    //     // background: #58575711
+    //     height: 30px
+    //     width: 100%
+    #main_window_img::-webkit-scrollbar
+        width: 0
+
+    #main_window_img
+        // text-align: center
+        position: fixed
+        background: $backColor
+        width: 270 * 3 + px
+        height: 205 * 4.53 + px
+        // overflow: scroll
+        z-index: 1
+        top: 1.7%
+        left: 27%
+        display: none
+        border-radius: 9px
+        overflow-x: scroll 
+        // overflow-y: scroll 
+        // -webkit-scrollbar width: 0
+
+        a
+            text-decoration: none
+
+        
+
+
+        #Profile_img
+            float: left
+            // width: 20%
+            position: absolute
+            // top: -60px
+            margin-left: 10px
+
+            img
+                margin-left: 10px
+                border-radius: 40px 
+                width: 70px
+                height: 70px
+
+        #username_and_nameimg
+            font-family: 'Corben', Georgia, Times, serif
+            font-weight: bold
+            font-size: 20px
+            width: 60%
+            margin-left: 15% 
+            margin-top: 27px
+            line-height: 30px
+            // float: left
+
+            #username_color
+                font-family: 'Corben', Georgia, Times, serif
+                color: #40789A !important
+            a
+                margin-left: 3px
+                color: #DF3E7B
+                font-size: 18px
+                font-family: DejaVu Sans Mono, monospace
+
+            span
+                font-size: 18px
+                color: $hoverColor
+
+
+        #like_share
+            font-family: 'Corben', Georgia, Times, serif
+            font-weight: bold
+            font-size: 20px
+            left: 75%
+            top: 27px
+            position: absolute
+            line-height: 30px
+            width: 30%
+            float: right
+            -moz-user-select: none
+            -khtml-user-select: none
+            user-select: none
+            color: $hoverColor
+            
+
+            span
+                margin-left: 15px
+                
+                // vertical-align: -15%
+
+            #share_img
+                width: 20px
+                height: 20px
+                vertical-align: -15%
+                margin-left: 5px
+
+            #like_img
+                width: 20px
+                height: 20px
+                vertical-align: -15%
+                margin-left: 5px
+            #vertical_line
+                width: 4px 
+                height: 65px 
+                position: absolute
+                top: -27px
+                margin-left: 5px
+                
+        img
+            height: 192 * 3.1 + px
+            width: 256 * 3.164 + px
+            margin-top: 20px
+
+
+        #description
+            font-family: 'Nobile', Helvetica, Arial, sans-serif
+            float: left
+            width: 60%
+            margin-left: 30px
+            margin-top: 30px
+            font-size: 14px
+            line-height: 22px
+
+            #count_like
+                font-family: 'Corben', Georgia, Times, serif
+                color: $hoverColor
+                margin-bottom: 15px
+                font-size: 14px
+                font-weight: bold
+
+                span
+                    margin-right: 30px
+                    margin-left: 5px
+                    
+
+        #works_count_likes_and_shares
+            font-family: 'Corben', Georgia, Times, serif
+            float: right
+            width: 35%
+            margin-top: 10px
+            height: 250px
+
+            img
+                width: 35px
+                height: 35px
+                margin-left: 5px 
+
+            #OneRow_modalWindow
+                margin-top: 10px
+                line-height: 30px
+                font-family: DejaVu Sans Mono, monospace
+                font-size: 18px
+                
+                
+            #TwoRow_modalWindow
+                line-height: 20px
+                margin-bottom: 20px
+                color: $hoverColor
+                font-family: DejaVu Sans Mono, monospace
+                
+
+            #button_send_owner
+                font-weight: 700
+                color: white
+                text-decoration: none
+                padding: 10px 68px 10px 68px
+                border-radius: 3px
+                background: #1bcc71
+                box-shadow: 0 -3px #199e5c inset
+                transition: 0.2s
+            #button_send_owner:hover
+                background: #2eec8a
+
+            #button_send_owner:active
+                background: #00ff80
+                box-shadow: 0 3px #00ff80 inset
+
+    #foot
+        float: left
+        // padding: 0
+       
+        width: 100%
+        background: $mainColor
+        height: $height
+
+
