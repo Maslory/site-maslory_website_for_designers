@@ -34,17 +34,17 @@ let footer_elem = document.getElementById('foot');
 let BossKING = document.getElementById('BossKING');
 
 
-document.getElementById('Upload').onmouseover = function() {
-    let imgLoad = document.getElementById('Imgload');    
-    imgLoad.src = "../../img/uploadActive.png";
+// document.getElementById('Upload').onmouseover = function() {
+//     let imgLoad = document.getElementById('Imgload');    
+//     imgLoad.src = "../../img/uploadActive.png";
     
-}
+// }
 
-document.getElementById('Upload').onmouseout = function() {
-    let imgLoad = document.getElementById('Imgload');    
-    imgLoad.src = "../../img/upload.png";
+// document.getElementById('Upload').onmouseout = function() {
+//     let imgLoad = document.getElementById('Imgload');    
+//     imgLoad.src = "../../img/upload.png";
     
-}
+// }
 
 
 arr.forEach(picture => {
@@ -148,6 +148,7 @@ result_box.onclick = function(event) {    // сделать, чтобы див �
     let this_div = target.closest('LI');
    
         if(target.tagName == 'IMG'  ){  // добавить всплывающую хуйню в исключение
+            document.body.style.overflow = 'hidden';
             main_window_this_img.src = target.src;
             main_window_img.style.display = 'block';
             BossKING.style.display = 'block';
@@ -155,6 +156,7 @@ result_box.onclick = function(event) {    // сделать, чтобы див �
         }
 
         if(target.tagName == 'LI'){
+            document.body.style.overflow = 'hidden';
             main_window_this_img.src = target.lastChild.src;
             main_window_img.style.display = 'block';
             BossKING.style.display = 'block';
@@ -166,6 +168,7 @@ result_box.onclick = function(event) {    // сделать, чтобы див �
 BossKING.onclick = function(event){
     main_window_img.style.display = 'none';
     BossKING.style.display = 'none';
+    document.body.style.overflow = 'auto';
 }
 result_box.onmousemove = function() {
     

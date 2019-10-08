@@ -97,30 +97,36 @@ html(lang="en")
       
     header
       #leftHead
-         a(href="")
-          span#logo
-           img(src="../../img/logo.png", alt="")
-         a(href="") Творчество 
-         a(href="") Обучение
-         a(href="") Работа
-         a(href="") Контакты
-         form(name='publish')
-           input(type="search", placeholder="Поиск...", id="input_search", value='' )
-           input(type="submit" id='submit' value='' name='')
+         #left_bar_header
+           a(href="")
+            span#logo
+              img(src="../../img/logo.png", alt="logo_company")
+           a(href="") Творчество 
+           a(href="") Обучение
+           a(href="") Работа
+           a(href="") Контакты
+         #div_search
+          form(name='publish')
+            input(type="search", placeholder="Поиск...", id="input_search", value='' )
+            input(type="submit" id='submit' value='' name='')
       #rightHead
-         a#Upload(href="") Upload
-         span#span1
-            a(href="")
-               img#Imgload(src="../../img/upload.png", alt="")   
-         a#SingIn(href="") Sign in 
-         a#SignUp(href="") Sign Up
+         #upload_block
+          a#Upload(href="") Upload
+          span#span1
+              a(href="")
+                img#Imgload(src="../../img/uploadActive.png", alt="")   
+         #button_sign
+          a#SignUp(href="") Sign Up
+         a#SignIn(href="") Sign In 
+    #filter_bar
+
     div#window_search_results
       ol#result_box
         
       
 
 
-    #foot1
+    //- #foot1
 
 
     footer#foot
