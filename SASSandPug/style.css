@@ -48,6 +48,7 @@ body header a:hover {
 }
 
 body header #leftHead {
+  min-width: 400px;
   font-size: 25px;
   color: #f3f3f3fa;
   display: -webkit-box;
@@ -147,8 +148,8 @@ body header #rightHead #upload_block #Upload {
 }
 
 body header #rightHead #upload_block #Imgload {
-  width: 20px;
-  height: 20px;
+  width: 20.01px;
+  height: 20.01px;
   margin: 0%;
   vertical-align: -15%;
   margin: 0%;
@@ -503,4 +504,6 @@ body #foot {
   background: rgba(61, 60, 59, 0.98);
   height: 55px;
 }
+
+
 /*# sourceMappingURL=style.css.map */
